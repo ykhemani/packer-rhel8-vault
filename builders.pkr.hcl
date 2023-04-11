@@ -1,4 +1,5 @@
 build {
+  // comment out this block if you are not registering the images in the HCP Packer Registry.
   hcp_packer_registry {
     bucket_name = var.bucket_name
     description = var.bucket_description
