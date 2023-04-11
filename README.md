@@ -25,13 +25,15 @@ You can also pass the variable using the `-var` flag. For example:
 -var gcp_project_id=ab-cdefghijklmnopqrstuvwxyz123
 ```
 
+There is an example `.pkrvars.hcl` file in this repo: [example.pkrvars.hcl](example.pkrvars.hcl).
+
 ### Google Cloud Credentials
 Set your Google Cloud Credentials to enable Packer to authenticate with Google Cloud. You may do this by setting the `GOOGLE_APPLICATION_CREDENTIALS` environment variable to point to the path of the service account key. Please see documentation on the [Google Compute Builder](https://developer.hashicorp.com/packer/plugins/builders/googlecompute#running-outside-of-google-cloud) for more information.
 
 ### Initialize Packer
 
 ```
-packer init [-var-file=<pkrvars.hcl file>] .
+packer init [-var-file=<.pkrvars.hcl file>] .
 ```
 
 For example:
@@ -43,7 +45,7 @@ packer init -var-file=yash.pkrvars.hcl .
 ### Format Packer Template
 
 ```
-packer fmt [-var-file=<pkrvars.hcl file>] .
+packer fmt [-var-file=<.pkrvars.hcl file>] .
 ```
 
 For example:
@@ -55,7 +57,7 @@ packer fmt -var-file=yash.pkrvars.hcl .
 ### Validate Packer Template
 
 ```
-packer validate [-var-file=<pkrvars.hcl file>] .
+packer validate [-var-file=<.pkrvars.hcl file>] .
 ```
 
 For example:
@@ -67,7 +69,7 @@ packer validate -var-file=yash.pkrvars.hcl .
 ### Build Packer Template
 
 ```
-packer build [-var-file=<pkrvars.hcl file>] .
+packer build [-var-file=<.pkrvars.hcl file>] .
 ```
 
 For example:
