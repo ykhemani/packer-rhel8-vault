@@ -25,6 +25,9 @@ You can also pass the variable using the `-var` flag. For example:
 -var gcp_project_id=ab-cdefghijklmnopqrstuvwxyz123
 ```
 
+### Google Cloud Credentials
+Set your Google Cloud Credentials to enable Packer to authenticate with Google Cloud. You may do this by setting the `GOOGLE_APPLICATION_CREDENTIALS` environment variable to point to the path of the service account key. Please see documentation on the [Google Compute Builder](https://developer.hashicorp.com/packer/plugins/builders/googlecompute#running-outside-of-google-cloud) for more information.
+
 ### Initialize Packer
 
 ```
